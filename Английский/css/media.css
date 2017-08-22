@@ -72,7 +72,7 @@
 	}
 }
 @media (min-width: 992px) and (max-width: 1200px){
-	.header{
+	header{
 		width: 80%;
 	}
 }
