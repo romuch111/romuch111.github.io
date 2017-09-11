@@ -1,0 +1,171 @@
+*{
+	box-sizing: border-box;
+	font-family: 'clear_sansregular', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	border: 1px solid #000;
+	max-width: 620px;
+	/*width: 620px;*/
+	display: flex;
+	flex-direction: column;
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px 15px 50px;
+		font-size: 14px;
+		background: #333;
+		color: #fff;
+		font-weight: 600;
+		p{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+			}
+			&.add:before{
+				width: 13px;
+				height: 18px;
+				background: url(../img/add.png) no-repeat;
+				left: -30px;
+			}
+			&.tel:before{
+				width: 17px;
+				height: 16px;
+				background: url(../img/tel.png) no-repeat;
+				left: -30px;
+			}
+		}
+	}
+}
+main{
+	height: 300px;
+	.main_img{
+		height: 125px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.main_h1{
+		height: 175px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		background: url(../img/roadline_long.png);
+	}
+}
+section{
+	padding: 30px 37px;
+	p{
+		padding: 30px 0px;
+		text-align: left;
+		line-height: 1.5;
+		color: rgb(51, 51, 51);
+	}
+	.section_tac{
+		padding: 0px 0px;
+		font-size: 18px;
+		text-align: center;
+		max-width: 505px;
+		margin: 0 auto;
+	}
+	.lease{
+		border: 2px solid rgb(51, 51, 51);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+  	height: 226px;
+  	overflow: hidden;
+		.lease_img{
+			height: 222px;
+			overflow: hidden;
+		}
+		.lease_text{
+			background: #E4E4E6;
+			width: 230px;
+			height: 175px;
+			margin: 28px 20px 28px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{
+				padding: 30px 24px 0px;
+				font-size: 18px;
+				line-height: 1;
+				letter-spacing: -0.7px;
+				font-family: "clear_sansbold";
+				text-align: center;
+				span{
+					font-family: 'PT Serif Italic';
+					font-size: 20px;
+				}
+			}
+			a{
+				button{
+					font-size: 14px;
+					margin-top: 16px;
+					outline: none;
+					cursor: pointer;
+          background-color: rgb(254, 204, 42);
+					border: none;
+					width: 136px;
+ 					height: 35px;
+					box-shadow: 0px 0px 4px 0px rgba(0, 0, 1, 0.49);
+				}	
+			}
+		}
+	}
+	.section_we{
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.section_we_p{
+		p{
+			padding: 0px;
+			position: relative;
+			text-indent: 30px;
+			margin-left: 25px;
+		}
+		p:before{
+			content: ''; 
+	    position: absolute; 
+	    border: 6px solid transparent;
+			border-left: 15px solid #FECC2A;
+			left: 1px;
+			top: 7px;
+		}
+	}
+	a{
+		button{
+			outline: none;
+			display: block;
+			margin: 0 auto;
+			font-size: 14px;
+			margin-top: 16px;
+			outline: none;
+			cursor: pointer;
+      background-color: rgb(254, 204, 42);
+			border: none;
+			width: 208px;
+			height: 35px;
+			box-shadow: 0px 0px 4px 0px rgba(0, 0, 1, 0.49);
+		}
+	}	
+}
+footer{
+	background: #E3E4E6;
+	padding: 15px 20px 30px;
+	font-size: 12px;
+}
+
+
